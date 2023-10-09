@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Fair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body class="font-[Poppins]">
+<!-- header area start -->
+    <header class="bg-[#FFC740]">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div
+                class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-[#490A6C] font-bold">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">News & Events</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Our Rides</a>
+                    </li> 
+                </ul>
+            </div>
+            <div>
+                <img class="w-16 cursor-pointer" src="../fun-fair/img/funfair.png" alt="...">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-[#490A6C] font-bold">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">The Park</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <button class="text-red-700 font-bold hover:bg-[#87acec]">Buy Now</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- banner start -->
+           <div class="bg-[#FFCA48]">
+           <img src="../fun-fair/img/funfair-image1.png " alt="">
+        <div class="flex justify-between">
+            <div class="text-[#490A6C]">Lorem ipsum dolor sit<br> amet consectetur.</div>
+            <div>
+                <button class="bg-[#EE2C2C] py-4 px-20 text-gray-50 rounded-full">Buy tickets today</button>
+            </div>
+            <div class="text-[#490A6C]">Lorem ipsum dolor sit <br> amet consectetur.</div>
+           </div> 
+        </div>
+
+    <!-- banner end -->
+    <!-- vdo start -->
+            <img class="flex justify-center" src="../fun-fair/img/funfair-home-icon2.png" alt="">
+    </div>
+    <!-- vdo end -->
+    <!-- attraction start -->
+    <section class="mt-[100px] bg-[url('https://ibb.co/L5pZCQK')]">
+        <h1 class="text-center text-[#44056C] text-5xl font-bold"> 
+            SEE WHAT ATTRACTIONS<br>
+            WE OFFER FOR YOUR<br> FAMILY</h1>
+            <div class="flex justify-center mt-6">
+                <img src="../fun-fair/img/funfair-sep1.png" alt="">
+            </div>
+            <!-- cards -->
+            <div>
+                <img class="relative" src="../fun-fair/img/funfair-icon1.png" alt="">
+                <span class="bg-[#44056C] text-white  py-4 px-6 align-center rounded-full absolute">1</span>
+                <h1>EVENT ARENAS AND POOLS</h1>
+                <p>Perro mat vinter montre allum postrolle vira</p>
+            </div>
+    </section>
+    <!-- attraction end -->
+
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+
+</html>
