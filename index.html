@@ -55,22 +55,61 @@
     <!-- banner start -->
            <div class="bg-[#FFCA48]">
            <img src="../fun-fair/img/funfair-image1.png " alt="">
-        <div class="flex justify-between">
+        <div class="w-[92%] flex justify-between">
             <div class="text-[#490A6C]">Lorem ipsum dolor sit<br> amet consectetur.</div>
             <div>
                 <button class="bg-[#EE2C2C] py-4 px-20 text-gray-50 rounded-full">Buy tickets today</button>
             </div>
             <div class="text-[#490A6C]">Lorem ipsum dolor sit <br> amet consectetur.</div>
            </div> 
-        </div>
+        </div>  
 
     <!-- banner end -->
-    <!-- vdo start -->
-            <img class="flex justify-center" src="../fun-fair/img/funfair-home-icon2.png" alt="">
-    </div>
-    <!-- vdo end -->
     <!-- attraction start -->
-    <section class="mt-[100px] bg-[url('https://ibb.co/L5pZCQK')]">
+    <div class="bg-cover bg-center h-100" style="background-image: url('../fun-fair/img/funfair-sectionbg2.png');">
+
+        <!-- vdo start -->
+    <div>
+        <img
+          id="showVideoPopup"
+          class="cursor-pointer mx-auto"
+          src="./img/funfair-home-icon2.png"
+          alt=""
+        />
+      </div>
+      <!-- vdo end -->
+      <!-- Popup Video -->
+      <div
+        id="videoPopupContainer"
+        class="fixed inset-0 flex items-center justify-center hidden"
+      >
+        <div class="modal-overlay fixed inset-0 bg-gray-500 opacity-50"></div>
+        <div class="modal relative p-8 bg-white rounded shadow-lg">
+          <button
+            id="closeVideoPopup"
+            class="absolute top-0 right-0 mt-4 mr-4 text-gray-500 hover:text-gray-700"
+          >
+            &#215;
+          </button>
+  
+          <div class="aspect-ratio-16/9">
+            <!-- Embedded YouTube Video -->
+            <iframe
+              width="640"
+              height="360"
+              src="https://www.youtube.com/embed/nTHNicNwq_Q"
+              title="ইংল্যান্ডের বিপক্ষে একাদশে পরিবর্তন হতেই হবে - নট আউট নোমান"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- End popup video -->
+    
+    
+    <div class="mt-[100px]">
         <h1 class="text-center text-[#44056C] text-5xl font-bold"> 
             SEE WHAT ATTRACTIONS<br>
             WE OFFER FOR YOUR<br> FAMILY</h1>
@@ -79,13 +118,47 @@
             </div>
             <!-- cards -->
             <div>
-                <img class="relative" src="../fun-fair/img/funfair-icon1.png" alt="">
-                <span class="bg-[#44056C] text-white  py-4 px-6 align-center rounded-full absolute">1</span>
+                <div class="relative">
+                    <img  src="../fun-fair/img/funfair-icon1.png" alt="">
+                    <span class="bg-[#44056C] text-white  py-4 px-6 align-center rounded-full absolute bottom-6 left-0">1</span>
+                </div>
                 <h1>EVENT ARENAS AND POOLS</h1>
                 <p>Perro mat vinter montre allum postrolle vira</p>
             </div>
-    </section>
+    </div>
+</div>
     <!-- attraction end -->
+    <!-- blog start -->
+    <div class="bg-cover bg-center h-100" style="background-image: url('../fun-fair/img/funfair-sectionbg3.jpg');">
+        <h1 class="text-[#FFD7D7] 
+                   text-5xl 
+                   font-bold
+                   text-center
+                   ">SEE OUR BLOG AND CHECK <br> WHAT IS WAITING FOR YOU</h1>
+        <div class="flex 
+                    justify-center 
+                    mt-6
+                    ">
+            <img src="../fun-fair/img/funfair-sep1.png" alt="">
+        </div>
+        <p class="text-center
+        w-[90] mx-auto
+       
+        ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <!-- cards -->
+        <div class="flex">
+            <div>
+                <img class=" 
+                "src="../fun-fair/img/funfair-blog-image2.jpg" alt="">
+            </div>
+            <div>
+                <img class="w-60" src="../fun-fair/img/funfair-blog-image1.jpg" alt="">
+                <img class="w-60" src="../fun-fair/img/funfair-blog-image3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <!-- blog end -->
 
 
 
@@ -95,6 +168,24 @@
             e.name = e.name === 'menu' ? 'close' : 'menu'
             navLinks.classList.toggle('top-[9%]')
         }
+
+
+
+          // JavaScript to show/hide the video popup
+      const showVideoPopupBtn = document.getElementById("showVideoPopup");
+      const videoPopupContainer = document.getElementById(
+        "videoPopupContainer"
+      );
+      const closeVideoPopupBtn = document.getElementById("closeVideoPopup");
+
+      showVideoPopupBtn.addEventListener("click", () => {
+        videoPopupContainer.classList.remove("hidden");
+      });
+
+      closeVideoPopupBtn.addEventListener("click", () => {
+        videoPopupContainer.classList.add("hidden");
+      });
+      //===========================================================
     </script>
 </body>
 
